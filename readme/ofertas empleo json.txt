@@ -1,0 +1,24 @@
+ <script>
+                fetch('ofertasempleo.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const ofertas = data.map(oferta => `
+                      <div class="grid-item">
+                        <h3>${oferta.titulo}</h3>
+                        <p><strong>Empresa:</strong> ${oferta.empresa}</p>
+                        <p><strong>Ciudad:</strong> ${oferta.ciudad}</p>
+                        <p><strong>Descripcion del cargo:</strong> ${oferta.cargo}</p>
+                        <p><strong>Fecha de publicación:</strong> ${oferta.fecha}</p>
+                        <p><strong>Referencia:</strong> ${oferta.referencia}</p>
+                      </div>
+                    `).join('');
+
+                        document.querySelector('.grid-container').innerHTML = ofertas;
+                    });
+
+            </script>
+
+            <h1><strong>Ofertas de empleo</strong></h1>
+            <div class="grid-container">
+                <div class="grid-item">
+                </div>

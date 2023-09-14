@@ -1,0 +1,74 @@
+[
+    {
+        "titulo": "Empleado en relacion de dependencia",
+        "nombre": "Juan Pérez",
+        "gradest": "Graduado",
+        "mini_cv": "Ingeniero Industrial con experiencia en gestión de proyectos.",
+        "servicio": "Gestión de proyectos",
+        "remuneracion": "$80.000",
+        "contacto": "juanperez@email.com"
+    },
+    {
+        "titulo": "Estudiante proactiva",
+        "nombre": "María González",
+        "gradest": "Estudiante",
+        "mini_cv": "Estudiante de Diseño Gráfico en búsqueda de prácticas profesionales.",
+        "servicio": "Diseño gráfico",
+        "remuneracion": "$12.000",
+        "contacto": "mariagonzalez@email.com"
+    },
+    {
+        "titulo": "Empleado en relacion de dependencia",
+        "nombre": "Pedro Rodríguez",
+        "gradest": "Graduado",
+        "mini_cv": "Licenciado en Administración con experiencia en Recursos Humanos.",
+        "servicio": "Recursos Humanos",
+        "remuneracion": "$70.000",
+        "contacto": "pedrorodriguez@email.com"
+    },
+    {
+        "titulo": "Estudiante proactiva",
+        "nombre": "Ana García",
+        "gradest": "Graduada",
+        "mini_cv": "Licenciada en Marketing con experiencia en redes sociales y publicidad online.",
+        "servicio": "Marketing digital",
+        "remuneracion": "$60.000",
+        "contacto": "anagarcia@email.com"
+    },
+    {
+        "titulo": "Empleado en relacion de dependencia",
+        "nombre": "Carlos Martínez",
+        "gradest": "Estudiante",
+        "mini_cv": "Estudiante de Programación en busca de prácticas profesionales.",
+        "servicio": "Programación",
+        "remuneracion": "$10.000",
+        "contacto": "carlosmartinez@email.com"
+    },
+    {
+        "titulo": "Empleado en relacion de dependencia",
+        "nombre": "Laura Sánchez",
+        "gradest": "Graduada",
+        "mini_cv": "Licenciada en Contabilidad con experiencia en finanzas.",
+        "servicio": "Contabilidad y finanzas",
+        "remuneracion": "$65.000",
+        "contacto": "laurasanchez@email.com"
+    },
+    {
+        "titulo": "Estudiante proactivo",
+        "nombre": "José Pérez",
+        "gradest": "Graduado",
+        "mini_cv": "Ingeniero Civil con experiencia en construcción y mantenimiento de edificios.",
+        "servicio": "Construcción y mantenimiento de edificios",
+        "remuneracion": "$90.000",
+        "contacto": "joseperez@email.com"
+    },
+    {
+        "titulo": "Estudiante proactiva",
+        "nombre": "Lucía Torres",
+        "gradest": "Estudiante",
+        "mini_cv": "Estudiante de Psicología en búsqueda de prácticas profesionales.",
+        "servicio": "Psicología",
+        "remuneracion": "$15.000",
+        "contacto": "luciatorres@email.com"
+    }
+]

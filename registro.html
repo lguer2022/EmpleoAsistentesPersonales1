@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Portal de Empleo para Asistentes Personales</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/img1.png" alt="Logo del portal de empleo">
+        <h1>Portal de Empleo para Asistentes Personales</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recuperar_pedidos_empleo.php">Pedidos de empleo</a></li>
+            <li><a href="recupera_empleos_ofrecidos.php">Empleos ofrecidos</a></li>
+            <li><a href="registro.html">Registrate</a></li>
+            <li><a href="iniciosesion.html">Log In</a></li>
+            <li><a href="index.html">Log Out</a></li>
+        </ul>
+    </nav>
+<main>
+      <h1>Registro de Usuarios</h1>
+    
+      <form action="guardar_registro.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" required><br>
+    
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" required><br>
+    
+        <label for="dni">DNI:</label>
+        <input type="text" name="dni" required><br>
+    
+        <label for="celular">Celular:</label>
+        <input type="text" name="celular" required><br>
+    
+        <label for="usuario">Usuario:</label>
+        <input type="text" name="usuario" required><br>
+    
+        <label for="contraseña">Contraseña:</label><br>
+        <input type="password" name="contraseña" required><br><br>
+    
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" required><br><br>
+    
+         <button type="submit">Registrate</button>
+      </form>
+    </main>
+
+
+    </body>
+    <footer>
+        <p>&copy; 2023 Leandro Guerschberg. Todos los derechos reservados.</p>
+    </footer>
+    
+    
+    </html>

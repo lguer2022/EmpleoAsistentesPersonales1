@@ -1,0 +1,63 @@
+
+/* crear la base de datos
+
+CREATE DATABASE cuidados123;
+
+/* usar la base de datos 
+USE cuidados123;
+
+
+/* crear tablas ofertas
+CREATE TABLE ofertas (
+  referencia INT AUTO_INCREMENT,
+  titulo VARCHAR(255),
+  empresa VARCHAR(255),
+  ciudad VARCHAR(255),
+  cargo VARCHAR(255),
+  fecha_publicacion DATE,
+  PRIMARY KEY (referencia)
+);
+
+
+/*crear tabla pedidos
+CREATE TABLE pedidos (
+  id INT AUTO_INCREMENT,
+  titulo VARCHAR(255),
+  nombre VARCHAR(255),
+  gradest VARCHAR(255),
+  mini_cv TEXT,
+  remuneracion DECIMAL(10,2),
+  contacto VARCHAR(255),
+  PRIMARY KEY (id)
+);
+
+
+/* insertar registros 
+INSERT INTO ofertas (titulo, empresa, ciudad, cargo, fecha_publicacion, referencia)
+VALUES
+    ('Cuidador de personas mayores', 'Cuidados Domiciliarios S.A.', 'Capital Federal', 'Cuidador Domiciliario', '2023-08-02', 'CDM-20230802-001'),
+    ('Asistente Domiciliario para adultos con discapacidad', 'Asistencia Integral S.R.L.', 'Gran Buenos Aires', 'Asistente Domiciliario', '2023-08-02', 'AIS-20230802-002'),
+    ('Cuidador de niños con necesidades especiales', 'Cuidado Infantil Especializado', 'Capital Federal', 'Cuidador Domiciliario', '2023-08-02', 'CIE-20230802-003'),
+    ('Cuidador para personas con movilidad reducida', 'Ayuda y Bienestar Domiciliario', 'Gran Buenos Aires', 'Cuidador Domiciliario', '2023-08-02', 'ABD-20230802-004'),
+    ('Asistente de cuidados paliativos', 'Cuidados Compasivos S.R.L.', 'Capital Federal', 'Asistente Domiciliario', '2023-08-02', 'CCS-20230802-005'),
+    ('Cuidador de pacientes postoperatorios', 'Recuperación en Casa S.A.', 'Gran Buenos Aires', 'Cuidador Domiciliario', '2023-08-02', 'RC-20230802-006'),
+    ('Asistente Domiciliario para personas con Alzheimer', 'Atención Integral a Familias', 'Capital Federal', 'Asistente Domiciliario', '2023-08-02', 'AIF-20230802-007'),
+    ('Cuidador de personas con enfermedades crónicas', 'Cuidados Especiales S.R.L.', 'Gran Buenos Aires', 'Cuidador Domiciliario', '2023-08-02', 'CES-20230802-008'),
+    ('Asistente Domiciliario para cuidado infantil', 'Cuidado Infantil Feliz', 'Capital Federal', 'Asistente Domiciliario', '2023-08-02', 'CIF-20230802-009'),
+    ('Cuidador de adultos mayores con demencia', 'Cuidado y Compañía S.R.L.', 'Gran Buenos Aires', 'Cuidador Domiciliario', '2023-08-02', 'CC-20230802-010');
+
+
+
+
+INSERT INTO pedidos (titulo, nombre, gradest, mini_cv, remuneracion, contacto)
+VALUES
+    ('Cuidador de personas con discapacidad', 'Mariano Gómez', 'Graduado', 'Cuidador profesional con experiencia en asistencia a personas con discapacidad.', 45000, 'empleos@centroatencion.com'),
+    ('Asistente domiciliario para adultos mayores', 'Carolina González', 'Estudiante', 'Estudiante de Enfermería o Gerontología para cuidado y acompañamiento de adultos mayores.', 30000, 'contacto@respetodomicilio.com'),
+    ('Cuidador de adultos mayores con demencia', 'Héctor Fernández', 'Graduado', 'Cuidador con formación en atención a personas con demencia o Alzheimer.', 55000, 'rrhh@cuidadoscompania.com'),
+    ('Asistente domiciliario para personas con discapacidad motriz', 'María Pérez', 'Estudiante', 'Estudiante avanzado de Terapia Ocupacional o Fisioterapia para asistencia en actividades diarias.', 35000, 'trabajos@hogaresperanza.com'),
+    ('Cuidador para adultos mayores dependientes', 'Ricardo Acosta', 'Graduado', 'Cuidador con experiencia en atención de personas mayores dependientes.', 50000, 'empleos@sonrisasadomicilio.com'),
+    ('Asistente domiciliario para personas con autismo', 'Valentina Ríos', 'Graduado', 'Profesional especializado en atención a personas con Trastorno del Espectro Autista.', 60000, 'contacto@apoyoycontencion.com'),
+    ('Cuidador de personas con discapacidad intelectual', 'Alejandro Luna', 'Estudiante', 'Estudiante de Psicología o Educación Especial para apoyo y cuidado de personas con discapacidad intelectual.', 25000, 'rrhh@hogarsinergia.com'),
+    ('Asistente domiciliario para adultos mayores con movilidad reducida', 'Lucía Torres', 'Graduado', 'Cuidador con conocimientos en movilización y asistencia a personas mayores.', 70000, 'empleos@plenavida.com'),
+    ('Cuidador para personas con enfermedades neurodegenerativas', 'Martín Sánchez', 'Graduado', 'Cuidador con experiencia en enfermedades neurodegenerativas como Parkinson o Esclerosis Múltiple.', 58000, 'info@contigocuidados.com'),
+    ('Asistente domiciliario para adultos mayores con problemas de memoria', 'Laura Aguirre', 'Estudiante', 'Estudiante avanzado de Enfermería con enfoque en el cuidado de personas con problemas de memoria.', 32000, 'trabajos@cuidadoscalidos.com');

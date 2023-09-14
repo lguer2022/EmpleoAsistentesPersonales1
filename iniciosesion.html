@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Portal de Empleo para Asistentes Personales</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/img1.png" alt="Logo del portal de empleo">
+        <h1>Portal de Empleo para Asistentes Personales</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recuperar_pedidos_empleo.php">Pedidos de empleo</a></li>
+            <li><a href="recupera_empleos_ofrecidos.php">Empleos ofrecidos</a></li>
+            <li><a href="registro.html">Registrate</a></li>
+            <li><a href="iniciosesion.html">Log In</a></li>
+            <li><a href="index.html">Log Out</a></li>
+        </ul>
+    </nav>
+
+  <h1>Inicio de Sesión</h1>
+  <form action="procesar_login.php" method="POST">
+    <label for="usuario">Usuario:</label>
+    <input type="text" id="usuario" name="usuario" required>
+
+    <label for="contraseña">Contraseña:</label>
+    <input type="password" id="contraseña" name="contraseña" required>
+
+    <button type="submit">Iniciar Sesión</button>
+  </form>
+  <b></b><b></b>
+  
+  <p>¿Olvidaste tu contraseña? <a href="recuperacontraseña.html">Recupérala aquí</a></p>
+</body>
+
+<footer>
+    <p>&copy; 2023 Leandro Guerschberg. Todos los derechos reservados.</p>
+  </footer>
+  
+</html>
