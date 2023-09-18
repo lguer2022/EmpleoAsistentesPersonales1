@@ -5,15 +5,50 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilos.css">
     <title>Portal de Empleo para Asistentes Personales</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = yes, width = device-width">
+
 </head>
 
 <body>
     <header>
         <img src="img/img1.png" alt="Logo del portal de empleo">
         <h1>Portal de Empleo para Asistentes Personales</h1>
+
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function () {
+
+                $('nav ul li > a:not(:only-child)').click(function (e) {
+                    $(this).siblings('.nav-submenu').toggle();
+                    $('.nav-submenu').not($(this).siblings()).hide();
+                    e.stopPropagation();
+                });
+
+                $('html').click(function () {
+                    $('.nav-submenu').hide();
+                });
+
+                $('#nav-boton').click(function () {
+                    $('nav ul').toggle()
+                    $('#nav-boton').toggleClass("activo");
+                })
+
+            });
+
+        </script>
+
     </header>
+
     <nav>
-        <ul>
+        <div class="nav-movil">
+            <a id="nav-boton" href="#!">
+                <span></span>
+            </a>
+        </div>
+        <ul class="nav-menu">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="recuperar_pedidos_empleo.php">Pedidos de empleo</a></li>
             <li><a href="recupera_empleos_ofrecidos.php">Empleos ofrecidos</a></li>
@@ -26,14 +61,21 @@
     <main>
         <section>
             <h2>Objetivos del Programa</h2>
-            <p>Este portal tiene por objeto vincular y ayudar a las personas que se han formado en el curso de Asistente Domiciliari que brinda FACULTAR junto a SENDEROS DEL SEMBRADOR a  encontrar empleo relevante a sus estudios y habilidades.</p>
+            <p>Este portal tiene por objeto vincular y ayudar a las personas que se han formado en el curso de Asistente
+                Domiciliari que brinda FACULTAR junto a SENDEROS DEL SEMBRADOR a encontrar empleo relevante a sus
+                estudios y habilidades.</p>
             <br>
-            <p>Esta acción conjunta entre ambas instituciones no es mas que la acción concreta y directa que una Institución de Educación Superior hace y realiza para y con la comunidad que la rodea involucrando para ello a instituciones intermedias. Con esto se prentede aprender acerca de las necesidades de la comunidad, satisfacer la demanda laboral en un área donde har carencia de personal y formar profesionales socialmente comprometidos y finalmente, que el conocimiento nos sirva a todos/as</p>
+            <p>Esta acción conjunta entre ambas instituciones no es mas que la acción concreta y directa que una
+                Institución de Educación Superior hace y realiza para y con la comunidad que la rodea involucrando para
+                ello a instituciones intermedias. Con esto se prentede aprender acerca de las necesidades de la
+                comunidad, satisfacer la demanda laboral en un área donde har carencia de personal y formar
+                profesionales socialmente comprometidos y finalmente, que el conocimiento nos sirva a todos/as</p>
         </section>
 
         <section>
             <h2>Limitaciones</h2>
-            <p>Este portal de empleo solo está disponible para el público que finaliza los estudios antes mencionados brindados por ambas instituciones y no garantiza la disponibilidad de
+            <p>Este portal de empleo solo está disponible para el público que finaliza los estudios antes mencionados
+                brindados por ambas instituciones y no garantiza la disponibilidad de
                 empleo.</p>
         </section>
 
@@ -44,15 +86,17 @@
 
         <section>
             <h2>Quienes Somos</h2>
-            <p>Desde el Instituto Superior FACULTAR, en particular desde e área de capacitación para el trabajo, generamos este espacio que busca ayudar a nuestros/as, futuros colegas, a encontrar empleo.</p>
+            <p>Desde el Instituto Superior FACULTAR, en particular desde e área de capacitación para el trabajo,
+                generamos este espacio que busca ayudar a nuestros/as, futuros colegas, a encontrar empleo.</p>
             <b></b>
-            <p>Y, por supuesto, vincular a quienes necesitan de nuestros/as profesionales con el recuros humano preciso.</p>
+            <p>Y, por supuesto, vincular a quienes necesitan de nuestros/as profesionales con el recuros humano preciso.
+            </p>
         </section>
     </main>
+
 </body>
 <footer>
     <p>&copy; 2023 Leandro Guerschberg. Todos los derechos reservados.</p>
 </footer>
-
 
 </html>

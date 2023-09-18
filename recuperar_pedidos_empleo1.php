@@ -5,15 +5,50 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilos.css">
     <title>Portal de Empleo para Asistentes Personales</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = yes, width = device-width">
+
 </head>
 
 <body>
     <header>
         <img src="img/img1.png" alt="Logo del portal de empleo">
         <h1>Portal de Empleo para Asistentes Personales</h1>
+
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function () {
+
+                $('nav ul li > a:not(:only-child)').click(function (e) {
+                    $(this).siblings('.nav-submenu').toggle();
+                    $('.nav-submenu').not($(this).siblings()).hide();
+                    e.stopPropagation();
+                });
+
+                $('html').click(function () {
+                    $('.nav-submenu').hide();
+                });
+
+                $('#nav-boton').click(function () {
+                    $('nav ul').toggle()
+                    $('#nav-boton').toggleClass("activo");
+                })
+
+            });
+
+        </script>
+
     </header>
+
     <nav>
-        <ul>
+        <div class="nav-movil">
+            <a id="nav-boton" href="#!">
+                <span></span>
+            </a>
+        </div>
+        <ul class="nav-menu">
         <li><a href="nuevospedidos.html">Inicio</a></li>
             <li><a href="recuperar_pedidos_empleo1.php">Pedidos de empleo</a></li>
             <li><a href="ingresar_pedido_empleo.html">Ingresar un pedido de empleo</a></li>
@@ -22,7 +57,6 @@
             <li><a href="registro1.php">Registrate</a></li>
             <li><a href="iniciosesion.html">Log In</a></li>
             <li><a href="index.html">Log Out</a></li>
-        </ul>
         </ul>
     </nav>
     <main>
